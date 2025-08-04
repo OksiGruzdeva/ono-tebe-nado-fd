@@ -46,7 +46,6 @@
 }
 
 .header__logo {
-
   width: 137px;
 }
 
@@ -96,10 +95,7 @@
   padding: 166px 19px 50px 50px;
   background-image: url("../images/cover.jpg");
   background-position: center;
-
   background-size: cover;
-
-
 }
 
 .overlay {
@@ -112,8 +108,6 @@
 .cover__container {
   position: relative;
   z-index: 1;
-
-
 }
 
 .cover__title {
@@ -135,12 +129,10 @@
 
 .cover__title-part--center {
   text-align: center;
-
 }
 
 .cover__title-part--right {
   text-align: right;
-
 }
 
 .cover__description {
@@ -204,27 +196,20 @@
 .lots__card-list-item {
   flex: 0 0 auto;
   width: 334px;
-  height: 597px;
+  min-height: 597px;
 }
 
 .card {
   position: relative;
   display: flex;
   height: 100%;
-  overflow: hidden;
   color: #fff;
   text-decoration: none;
   background-position: center;
   background-size: cover;
 }
 
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-}
+
 
 .card__content {
   position: relative;
@@ -236,7 +221,6 @@
   width: 100%;
   height: 100%;
   padding: 50px 40px;
-  overflow: hidden;
 }
 
 .card__linc {
@@ -252,7 +236,6 @@
   margin: 0;
   font-weight: 400;
   font-size: 20px;
-
 }
 
 /* Ссылки и стили карточек */
@@ -281,9 +264,7 @@
 .about {
   display: flex;
   justify-content: center;
-
   gap: 72px;
-  /* расстояние между колонками по макету */
   margin-top: 120px;
 }
 
@@ -307,7 +288,6 @@
 
 .about__title {
   margin: 135px 0 100px;
-  /* отступ сверху и снизу до текста */
   font-weight: 700;
   font-size: 40px;
   line-height: 46px;
@@ -320,7 +300,6 @@
   flex-direction: column;
 
   gap: 25px;
-  /* отступ между абзацами */
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
@@ -357,6 +336,10 @@
   align-items: center;
   list-style-type: none;
   gap: 2px;
+}
+
+.no-marker {
+  text-decoration: none;
 }
 
 .footer__social {
